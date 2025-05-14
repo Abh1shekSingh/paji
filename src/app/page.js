@@ -6,6 +6,7 @@ import gsap from "gsap";
 import { useEffect, useRef } from "react";
 import About from "./pages/About";
 import Work from "./pages/Work";
+import Test from "./pages/Test";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -43,9 +44,10 @@ export default function Home() {
   return <ReactLenis root>
       <main ref={mainRef} className="w-full h-[200vh]">
         <Hero ref={heroRef} />
-        <About ref={aboutRef} />
         <div>
+          <About ref={aboutRef} />
           <Work />
+          <Test />
         </div>
       </main> 
       
