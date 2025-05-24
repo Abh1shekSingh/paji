@@ -53,16 +53,16 @@ const Hero = React.forwardRef((_props, ref) => {
 
   return (
       
-        <div ref={ref} className='overflow-x-hidden sticky top-0 w-full bg-[var(--color-light)] h-svh flex justify-center items-center'>
+        <section ref={ref} className='hero overflow-x-hidden  sticky top-0 w-full bg-[var(--color-light)] h-svh flex justify-center items-center'>
             <div className='md:w-[420px] w-[300px] overflow-hidden rounded-sm'>
                 <Image ref={imageRef} src={'/developer/abhishek.webp'} alt='developer-hero-image' layout='responsive'  width={500} height={500} style={{ clipPath: 'polygon(0 0, 100% 0, 100% 0, 0 0)', scale: '1.1' }}/>
             </div>
             <div className='absolute -z-1 whitespace-nowrap'>
-                <h1 ref={headingRef} className='opacity-0 heading md:text-[50vw] text-[75vw] text-red-600'>
+                <h2 ref={headingRef} className='opacity-0 heading md:text-[30vw] text-[55vw] text-gray-100'>
                   Abhishek<sup>&copy;</sup> Abhishek<sup>&copy;</sup> Abhishek<sup>&copy;</sup> Abhishek<sup>&copy;</sup> Abhishek<sup>&copy;</sup> Abhishek<sup>&copy;</sup> Abhishek<sup>&copy;</sup> Abhishek<sup>&copy;</sup> Abhishek<sup>&copy;</sup> Abhishek<sup>&copy;</sup>
-                </h1>
+                </h2>
             </div>
-        </div>
+        </section>
         
   )
 });

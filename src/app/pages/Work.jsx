@@ -69,7 +69,7 @@ const Work = () => {
     }
   }, {scope:container})
   return (
-    <section ref={container} className='text-white h-svh overflow-hidden flex bg-[var(--color-white)] justify-center items-center'>
+    <section ref={container} className='work text-white min-h-svh overflow-hidden flex bg-[var(--color-white)] justify-center items-center'>
       <div className='cards-container relative w-[70%] h-[70%] overflow-hidden rounded-xl'>
         <div className='card'>
           <div className='tag'>

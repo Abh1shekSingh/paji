@@ -4,7 +4,7 @@ import Hero from "./pages/Hero";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
 import { useEffect, useRef } from "react";
-import About from "./pages/About";
+import Services from "./pages/Services";
 import Work from "./pages/Work";
 import Test from "./pages/Test";
 
@@ -14,13 +14,12 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Home() {
   const mainRef = useRef(null);
   const heroRef = useRef(null);
-  const aboutRef = useRef(null);
+  const serviceRef = useRef(null);
 
   useEffect(() => {
-    const isMobile = window.matchMedia("(max-width: 768px)").matches;
     gsap.to(heroRef.current, {
-      ...(isMobile?{}:{scale:0.8}),
-      ...(isMobile?{}: {rotate:-5}),
+      rotate:-5,
+      scale:0.5,
       scrollTrigger: {
         trigger:mainRef.current,
         start:"top top",
@@ -29,9 +28,9 @@ export default function Home() {
       }
     });
 
-    gsap.to(aboutRef.current, {
-      ...(isMobile?{}:{scale:1}), 
-      ...(isMobile?{}:{ rotate:0}),
+    gsap.to(serviceRef.current, {
+      rotate:0,
+      scale:1,
       scrollTrigger: {
         trigger:mainRef.current,
         start:"top top", 
@@ -45,7 +44,7 @@ export default function Home() {
       <main ref={mainRef} className="w-full h-[200vh]">
         <Hero ref={heroRef} />
         <div>
-          <About ref={aboutRef} />
+          <Services ref={serviceRef} />
           <Work />
           <Test />
         </div>
