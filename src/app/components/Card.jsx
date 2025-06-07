@@ -3,18 +3,26 @@
 import Image from 'next/image'
 import React from 'react'
 
-const Card = ({title, copy, index}) => {
+const Card = ({title, details, index}) => {
   return (
-    <div className='sticky top-0 services text-white relative md:px-7' id={`card-${index + 1}`}>
-        <div className='service-inner relative  w-[100%] will-change-transform h-screen p-[2em] flex flex-col md:flex-row '>
-            <div className='flex-3'>
-                <h1 className='subheading text-5xl md:text-7xl 2xl:text-[12rem] font-semibold md:leading-25 2xl:leading-45 mb-7 2xl:mb-25'>{title}</h1>
-                <p className='subheading font-light text-2xl md:text-4xl 2xl:text-[4rem]'>{copy}</p>
+    <div className='sticky top-0 services text-white relative h-[300px]' id={`card-${index + 1}`}>
+        <div className='service-inner relative bg-[var(--color-dark)] w-[100%] min-h-screen flex flex-col'>
+            <div className='flex gap-2 border-b-1 border-gray-400'>
+              <span className='text-[1rem] md:text-[2rem] opacity-50 subheading'>0{index + 1}</span>
+              <h1 className='heading text-[2rem] md:text-[3.5rem] tracking-wide '>{title}</h1>
             </div>
-            <div className='flex-1 w-[100%] overflow-hidden cover aspect-video h-[30%]'>
-                <Image src={`/projects/card-${index + 1}.jpg`} alt={title} width={500} height={500} className='text-[4rem] font-semibold leading-10 mb-[4rem] md:mb-[2.5em]' />
+            <div className='flex justify-between items-center md:px-10 mt-7'>
+              <u className='subheading list-none no-underline'>
+                {details.map((item, i) => (
+                  <li key={i} className='subheading text-[1rem] md:text-[1.25rem]'>{item}</li>
+                ))}
+              </u>
+              <div className='w-[30%] h-[30%] overflow-hidden'>
+                <Image src={`/projects/${index + 1}.jpg`} alt='service-images' width={400} height={400}/>
+              </div>
             </div>
         </div>
+        
     </div>
   )
 }

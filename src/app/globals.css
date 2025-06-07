@@ -79,23 +79,26 @@ body {
   }
 
   #card-1 .service-inner {
-    background-color: #c3abff;
-    top:calc(2vh + 0em);
-    border-radius: 20px;
-    border: none;
+    top:calc(2vh + 5em);
   }
   #card-2 .service-inner {
-    background-color: #fed35b;
-    top:calc(20vh + 3em);
-    border-radius: none;
-    border: none;
+    top:calc(2vh + 11em);
+  }
+  #card-3 .service-inner {
+    top:calc(2vh+ 22em);
   }
 
+.text-stroke {
+  -webkit-text-stroke: 2px var(--color-light); /* For Webkit browsers (Chrome, Safari) */
+  color: transparent; /* The fill color of the text */
+}
 
 
   @media (max-width:900px) {
     #card-2 .service-inner {
-      background-color: #fed35b;
-      top:calc(13vh)
+      top:calc(20vh + 2em);
+    }
+    #card-3 .service-inner {
+      top:calc(20vh + 4em);
     }
   }
