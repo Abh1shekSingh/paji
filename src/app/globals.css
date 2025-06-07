@@ -13,8 +13,8 @@ body {
 }
 
 @font-face {
-    font-family: "Kenfolg";
-    src: url("/fonts/Kenfolg.otf") format(truetype);
+    font-family: "Bosch";
+    src: url("/fonts/Bosch-Display.otf") format(truetype);
     font-display: swap;
 }
 
@@ -24,7 +24,7 @@ body {
 }
 
 .heading {
-    font-family: "Kenfolg", serif;
+    font-family: "Bosch", serif;
 }
 
 .subheading {

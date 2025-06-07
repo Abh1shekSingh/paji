@@ -31,9 +31,10 @@ export default function Copy({children, animateOnScroll = true, delay = 0}) {
         elements.forEach((element) => {
             elementRef.current.push(element);
             let split = SplitText.create(element, {
-                type:"lines", 
+                type:"words, lines", 
                 mask:"lines", 
                 linesClass: "line++",
+                autoSplit:true
             })
             
             splitRef.current.push(split);

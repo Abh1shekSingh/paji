@@ -6,7 +6,8 @@ import gsap from "gsap";
 import { useEffect, useRef } from "react";
 import Services from "./pages/Services";
 import Work from "./pages/Work";
-import Test from "./pages/Test";
+import About from "./pages/About";
+import CTA from "./pages/CTA";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -46,7 +47,8 @@ export default function Home() {
         <div>
           <Services ref={serviceRef} />
           <Work />
-          <Test />
+          <About />
+          <CTA />
         </div>
       </main> 
       

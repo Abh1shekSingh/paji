@@ -5,6 +5,7 @@ import { useRef } from 'react'
 import gsap from 'gsap'
 import { useGSAP } from "@gsap/react"
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import Link from 'next/link'
 
 const Work = () => {
   const container = useRef(null);
@@ -76,7 +77,9 @@ const Work = () => {
             <p>Craftzblog</p>
           </div>
           <div>
-            <img src={'/projects/blogapp.webp'} alt='one' width={500} height={500} />
+            <Link href={`https://craftzblog.vercel.app/`}>
+              <img src={'/projects/blogapp.webp'} alt='one' width={500} height={500} />
+            </Link>
           </div>
         </div>
         <div className='card'>
@@ -84,7 +87,9 @@ const Work = () => {
             <p>Portfolio</p>
           </div>
           <div>
-            <img src={'/projects/clientportfolio.webp'} alt='one' width={500} height={500} />
+            <Link href={`https://babbar.vercel.app/`}>
+              <img src={'/projects/clientportfolio.webp'} alt='one' width={500} height={500} />
+            </Link>
           </div>
         </div>
         <div className='card'>
@@ -92,7 +97,9 @@ const Work = () => {
             <p>Cryptorush</p>
           </div>
           <div>
-            <img src={'/projects/cryptorush.webp'} alt='one' width={500} height={500} />
+            <Link href={`https://cryptorushh.netlify.app/`}>
+              <img src={'/projects/cryptorush.webp'} alt='one' width={500} height={500} />
+            </Link>
           </div>
         </div>
         <div className='card'>
@@ -100,7 +107,9 @@ const Work = () => {
             <p>Codingkaro</p>
           </div>
           <div>
-            <img src={'/projects/coding.webp'} alt='one' width={500} height={500} />
+            <Link href={`https://codeekaro.netlify.app/`}>
+              <img src={'/projects/coding.webp'} alt='one' width={500} height={500} />
+            </Link>
           </div>
         </div>
       </div>

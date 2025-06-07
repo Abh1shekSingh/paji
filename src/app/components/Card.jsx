@@ -9,12 +9,12 @@ const Card = ({title, details, index}) => {
         <div className='service-inner relative bg-[var(--color-dark)] w-[100%] min-h-screen flex flex-col'>
             <div className='flex gap-2 border-b-1 border-gray-400'>
               <span className='text-[1rem] md:text-[2rem] opacity-50 subheading'>0{index + 1}</span>
-              <h1 className='subheading font-bold text-[2rem] md:text-[3.5rem] tracking-wide '>{title}</h1>
+              <h1 className='heading font-bold text-[2rem] md:text-[3.5rem] tracking-wide '>{title}</h1>
             </div>
             <div className='flex justify-between items-center md:px-10 mt-7'>
-              <u className='subheading list-none no-underline'>
+              <u className='list-none no-underline'>
                 {details.map((item, i) => (
-                  <li key={i} className='heading opacity-70 text-[1rem] md:text-[1.25rem]'>{item}</li>
+                  <li key={i} className='subheading opacity-70 text-[1rem] md:text-[1.5rem]'>{item}</li>
                 ))}
               </u>
               <div className='w-[30%] h-[30%] overflow-hidden'>
