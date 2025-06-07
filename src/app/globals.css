@@ -13,8 +13,8 @@ body {
 }
 
 @font-face {
-    font-family: "IFDurerDisplay";
-    src: url("/fonts/IFDurerDisplay-Regular.ttf") format(truetype);
+    font-family: "Kenfolg";
+    src: url("/fonts/Kenfolg.otf") format(truetype);
     font-display: swap;
 }
 
@@ -24,7 +24,7 @@ body {
 }
 
 .heading {
-    font-family: "IFDurerDisplay", serif;
+    font-family: "Kenfolg", serif;
 }
 
 .subheading {
