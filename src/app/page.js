@@ -8,6 +8,7 @@ import Services from "./pages/Services";
 import Work from "./pages/Work";
 import About from "./pages/About";
 import CTA from "./pages/CTA";
+import Footer from "./pages/Footer";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -49,6 +50,13 @@ export default function Home() {
           <Work />
           <About />
           <CTA />
+        </div>
+        <div className="relative h-[400px]" style={{clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%"}}>
+          <div className="relative h-[calc(100vh+400px)] -top-[100vh]">
+            <div className="h-[400px] sticky top-[calc(100vh-400px)]">
+              <Footer />
+            </div>
+          </div>
         </div>
       </main> 
       

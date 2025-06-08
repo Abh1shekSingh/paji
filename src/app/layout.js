@@ -1,5 +1,6 @@
 
 import "./globals.css";
+import Footer from "./pages/Footer";
 
 
 export const metadata = {
