@@ -12,9 +12,10 @@ body {
     --color-dark:#100c08;
 }
 
+
 @font-face {
-    font-family: "Bosch";
-    src: url("/fonts/Bosch-Display.otf") format(truetype);
+    font-family: "Ranade";
+    src: url("/fonts/Ranade.ttf") format(truetype);
     font-display: swap;
 }
 
@@ -23,8 +24,9 @@ body {
     src: url("/fonts/Satoshi-Variable.ttf") format(truetype);
 }
 
+
 .heading {
-    font-family: "Bosch", serif;
+    font-family: "Ranade", serif;
 }
 
 .subheading {
