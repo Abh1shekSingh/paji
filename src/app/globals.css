@@ -86,9 +86,6 @@ body {
   #card-2 .service-inner {
     top:calc(2vh + 11em);
   }
-  #card-3 .service-inner {
-    top:calc(2vh+ 22em);
-  }
 
 .text-stroke {
   -webkit-text-stroke: 2px var(--color-light); /* For Webkit browsers (Chrome, Safari) */
@@ -98,9 +95,47 @@ body {
 
   @media (max-width:900px) {
     #card-2 .service-inner {
-      top:calc(20vh + 2em);
+      top:calc(20vh + 5em);
     }
-    #card-3 .service-inner {
-      top:calc(20vh + 4em);
+    .minimap {
+      top: auto;
+      right: auto;
+      bottom: 5em;
+      left: 50%;
+      width: auto;
+      height: 80px;
+      touch-action: none;
+    }
+
+    .indicator {
+      top:0;
+      left: 0;
+      width: 60px;
+      height: 100%;
+    }
+
+    .items {
+      flex-direction: row;
+      width: max-content;
+      height: 100%;
+      touch-action: none;
+    }
+
+    .item {
+      width: 60px;
+      height: 100%;
+      padding: 5px;
+    }
+    .img-preview {
+      top: 45%;
+      width: 75%;
+      height: 50%;
     }
   }
+
+.item {
+  width: 100%;
+  height: 60px;
+  padding: 5px;
+  cursor: pointer;
+}

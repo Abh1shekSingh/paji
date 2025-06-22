@@ -9,6 +9,7 @@ import Work from "./pages/Work";
 import About from "./pages/About";
 import CTA from "./pages/CTA";
 import Footer from "./pages/Footer";
+import WorkMobile from "./pages/WorkMobile";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -17,6 +18,8 @@ export default function Home() {
   const mainRef = useRef(null);
   const heroRef = useRef(null);
   const serviceRef = useRef(null);
+
+  
 
   useEffect(() => {
     gsap.to(heroRef.current, {
@@ -47,7 +50,12 @@ export default function Home() {
         <Hero ref={heroRef} />
         <div>
           <Services ref={serviceRef} />
-          <Work />
+          <div className="hidden md:block">
+            <Work />
+          </div>
+          <div className="block md:hidden">
+            <WorkMobile />
+          </div>
           <About />
           <CTA />
         </div>
