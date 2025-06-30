@@ -15,9 +15,9 @@ const Footer = () => {
             <div className='col-span-3 2xl:col-span-1'>
               <p className='mb-4 heading border-b-1 py-2  text-[1.5rem] 2xl:text-[2rem] opacity-70'>Explore</p>
               <ul className='flex flex-col gap-4 subheading text-[1.15rem]'>
-                <Link href='/photos'><li>Photography</li></Link>
-                <Link href={``}><li>Instagram</li></Link>
-                <Link href={``}><li>Linkedin</li></Link>
+                <Link href='https://www.instagram.com/paji.shots?igsh=YzBzMWt4Nzh3MHVo' target='_blank' rel='noopener noreferrer'><li>Photography</li></Link>
+                <Link href={`https://www.instagram.com/_abh1sheksingh?igsh=Y202MWt6dXJiNmln&utm_source=qr`} target='_blank' rel='noopener noreferrer'><li>Instagram</li></Link>
+                <Link href={`https://www.linkedin.com/in/craftingbugs`} target='_blank' rel='noopener noreferrer'><li>Linkedin</li></Link>
               </ul>
             </div>
             <div className='col-span-3 w-full flex flex-col justify-between'>
