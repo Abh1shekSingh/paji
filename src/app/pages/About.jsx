@@ -11,8 +11,8 @@ const About = () => {
         <h1 className='heading text-[2.25rem] mb-4 2xl:mb-20 2xl:text-[7rem] leading-13 md:leading-30 2xl:leading-tight font-bold uppercase'>Developer <span className='opacity-70 italic'>,</span> Photographer.</h1>
       </Copy>
       <div className='grid grid-cols-3 gap-7  2xl:gap-14'>
-        <div className='overflow-hidden w-full col-span-3 2xl:col-span-1 rounded-lg grayscale hover:grayscale-0 transition-all duration-400 ease-in-out cursor-pointer '>
-          <Image src={`/developer/abhishek-about.webp`} alt='developer-image-standing with railing' width={300} height={300} className='scake-[1.1]' />
+        <div className='overflow-hidden w-full col-span-3 2xl:col-span-1 rounded-lg grayscale hover:grayscale-0 transition-all duration-500 ease-in-out cursor-pointer '>
+          <Image src={`/developer/abhishek-about.webp`} alt='developer-image-standing with railing' width={300} height={300} className='hover:scale-[1.1] transition-all duration-500 ease-in-out' />
         </div>
         <div className='col-span-3 2xl:col-span-2 '>
         <Copy>

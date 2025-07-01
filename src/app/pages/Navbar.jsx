@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <nav ref={navbarRef} className='-translate-y-15 opacity-0 absolute top-0 z-998 mix-blend-difference text-white w-full px-12 py-4 flex justify-between items-center'>
         <div className='flex justify-between items-center gap-15'>
-          <h1 className='heading font-bold tracking-tight md:text-[2.5vw] text-[6vw]'>artistry</h1>
+          <h1 className='heading font-bold tracking-tight md:text-[2.5vw] text-[3rem]'>ਸਿੰਘ</h1>
           {/* <p className='subheading'>artistry </p> */}
         </div>
         <div className='hidden sm:block'>

@@ -25,7 +25,7 @@ const Card = ({title, details, index}) => {
                   <li key={i} className='subheading opacity-70 text-[1rem] md:text-[1.5rem]'>{item}</li>
                 ))}
               </u>
-              <div className='w-[30%] h-[30%] overflow-hidden'>
+              <div className='hidden md:block w-[30%] h-[30%] overflow-hidden'>
                 <Image src={`/projects/${index + 2}.jpg`} alt='service-images' width={400} height={400}/>
               </div>
             </div>
